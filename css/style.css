@@ -1,0 +1,685 @@
+/* ================================================================= */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: "Titillium Web", sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ================================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400&display=swap');
+
+/* ================================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+/* ================================================================= */ 
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+/* *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=* */
+/* *=*=*=*=*=*=*=*=*=*=*=*=*=*=*INDEX*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=* */
+
+/* *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=* */
+/* *=*=*=*=*=*=*=*=*=*=*=*=*=*=*BOOTSTRAP*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=* */
+
+.card {
+    background-color: #000000;
+    margin-bottom: 100px;
+}
+
+/* *=*=*=*=*=*=*=*=*=*=*=*=*=*=*BOOTSTRAP*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=* */
+/* *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=* */
+
+
+
+
+
+/* ====================================================== */
+/* ========================HEADER======================== */
+
+.page-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-wrapper .mycontainer {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #000000;
+    width: 100%;
+    min-height: 80px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    margin-right: 0px;
+}
+
+.logo img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.menu {
+    width: 65%;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+
+.menu nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 25px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.menu nav a:hover {
+    color: #8b88ff;
+}
+
+.nav {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+
+.search {
+    width: 400px;
+    height: 40px;
+    background-color: #ffffff;
+    justify-content: space-between;
+    display: flex;
+    position: absolute;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+.search:hover {
+    border: 2px solid #8b88ff;
+}
+
+
+.search .lupa-buscar {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #818181;
+}
+
+.search .input-buscar {
+    position: absolute;
+    left: 40px;
+    width: 100%;
+    height: 100%;
+    line-height: 35px;
+}
+
+.search .input-buscar input {
+    border: 0;
+    outline: 0;
+    width: 320px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: transparent;
+    
+}
+
+.profile .nav2 .profile-pic{
+    color: #ffffff;
+    font-size: 40px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.profile .nav2 .profile-pic:hover{
+    color: #8b88ff;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .menu nav a {
+        font-size: 0px;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 700px) {
+
+    .menu nav a {
+        font-size: 0px;
+    }
+
+    .search {
+        width: 200px;   
+    }
+
+    .search .input-buscar input {
+        width: 150px;
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    .menu nav a {
+        font-size: 0px;
+    }
+
+    .search {
+        width: 60px;   
+    }
+
+    .search .input-buscar input {
+        width: 50px;
+        font-size: 0px;
+    }
+
+}
+
+/* ========================HEADER======================== */
+/* ====================================================== */
+
+/* ==================================================== */
+/* ========================MAIN======================== */
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.anuncio {
+    background: #000000;
+    margin: 100px 0;
+    width: 100%;
+    max-width: 1200px;
+    height: 700px;
+    border-radius: 10px;
+    box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.anuncio img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.legenda1 {
+    width: 100%;
+    height: 40px;
+}
+
+.legenda1 h1 {
+    font-size: 40px;
+    margin-left: 28px;
+    font-weight: 600;
+}
+
+.artistas-rt {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.artistas-rt .art-box {
+    background: #000000;
+    width: 200px;
+    height: 270px;
+    margin: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.artistas-rt .art-box .imgt {
+    background: #ffffff;
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.artistas-rt .art-box .imgt img {
+    width: 190px;
+    height: 190px;
+}
+
+.artistas-rt h1 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-right: 95px;
+}
+
+.artistas-rt h2 {
+    font-size: 12px;
+    color: #ccc;
+    font-weight: 400;
+    margin-right: 145px;
+    margin-bottom: 10px;
+}
+
+.legenda2 {
+    width: 100%;
+    height: 40px;
+}
+
+.legenda2 h1 {
+    font-size: 40px;
+    margin-left: 28px;
+    font-weight: 600;
+}
+
+.playlists-fpv {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.playlists-fpv .fpv-box {
+    background: #000000;
+    width: 200px;
+    height: 270px;
+    margin: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.playlists-fpv .fpv-box .imgfpv {
+    background: #ffffff;
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.playlists-fpv .fpv-box .imgfpv img {
+    width: 180px;
+    height: 180px;
+}
+
+.playlists-fpv h1 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-right: 95px;
+}
+
+
+
+
+/* ========================MAIN======================== */
+/* ==================================================== */
+
+
+
+
+
+/* ====================================================== */
+/* ========================FOOTER======================== */
+
+footer {
+    width: 100%;
+    min-height: 80px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.5);
+}
+
+.rodape {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.rodape nav {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.rodape nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.rodape nav a:hover {
+    color: #8b88ff;
+}
+
+.rodape h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* ========================FOOTER======================== */
+/* ====================================================== */
+
+/* *=*=*=*=*=*=*=*=*=*=*=*=*=*=*INDEX*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=* */
+/* *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=* */
+
+
+
+
+
+
+
+
+/* *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=* */
+/* *=*=*=*=*=*=*=*=*=*=*=*=*=*=*USER PROFILE*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
+
+
+/* ====================================================== */
+/* ========================MAIN======================== */
+
+.user-main-container {
+    width: 100%;
+    max-width: 1260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.userbg {
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    background-color: #000000;
+    box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.5);
+    margin-top: -100px;
+    border-radius: 10px;
+    z-index: -1;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.userbg .user-img {
+    background-color: #000000;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.userbg .user-img img {
+    width: 200px;
+    height: 200px;
+    
+}
+
+
+.userbg h1 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 300;
+    margin-right: 0px;
+    margin-left: 50px;
+    margin-top: 100px;
+    
+}
+
+.usernav {
+    margin-top: 450px;
+    margin-left: 650px;
+}
+
+.usernav a {
+    color: #ffffff;
+    font-size: 150%;
+}
+
+.user-main-container .legenda1 {
+    margin-top: 100px;
+    margin-left: 00px;
+    width: 100%;
+    max-width: 1315px;
+}
+
+/* ========================MAIN======================== */
+/* ====================================================== */
+
+/* *=*=*=*=*=*=*=*=*=*=*=*=*=*=*USER PROFILE*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
+/* *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=* */
+
+
+/* *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=* */
+/* *=*=*=*=*=*=*=*=*=*=*=*=*=*=*REGISTER*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
+
+/* ====================================================== */
+/* ========================MAIN======================== */
+
+.register-main-container {
+    width: 1250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.register-bg {
+    width: 50%;
+    height: 750px;
+    background-color: #000000;
+    box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    overflow: hidden;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+.register-bg .register-logo img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.register-bg form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-bg form .inputre {
+    width: 550px;
+    height: 50px;
+    margin-top: 25px;
+    border-radius: 10px;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-bg form input {
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.register-bg .submit {
+    width: 550px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.register-bg .submit:hover {
+    background-color: #8b88ff;
+}
+
+.register-bg .submit h1 {
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+
+
+/* ========================MAIN======================== */
+/* ====================================================== */
+
+/* *=*=*=*=*=*=*=*=*=*=*=*=*=*=*REGISTER*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= */
+/* *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=* */
